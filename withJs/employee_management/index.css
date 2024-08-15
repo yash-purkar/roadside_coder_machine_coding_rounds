@@ -1,0 +1,96 @@
+:root {
+  --btn-bg: #ebe5e5;
+  --border-color: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.employees__container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.employees__header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee__add--button {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  background-color: var(--btn-bg);
+  border-radius: 1rem;
+}
+
+.employees__details {
+  display: flex;
+
+  height: 400px;
+}
+
+.column__title {
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.employees__list,
+.employee__info {
+  height: 400px;
+  border: 1px solid var(--border-color);
+  width: 30%;
+}
+
+.employee__list--employees,
+.employee__info,
+.employees__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee__info {
+  width: 70%;
+}
+
+.employee__list--employees {
+  overflow: scroll;
+}
+
+.employee__list--item {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee__list--item > button {
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+}
+
+.employee__list--item:hover {
+  background-color: var(--btn-bg);
+  cursor: pointer;
+}
+
+.employee__item--selected {
+  border: none;
+  background-color: var(--btn-bg);
+}
+
+.employee__info--container {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.employee__profile {
+  border-radius: 50%;
+}
